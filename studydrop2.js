@@ -46,6 +46,7 @@ Q45=["What's 0+7?", "2", "7", "1", "7"]
 
 var Addition3 =[Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, Q20, Q21, Q22, Q23, Q24, Q25, Q26, Q27, Q28, Q29, Q30, Q31, Q32, Q33, Q34, Q35, Q36, Q37, Q38, Q39, Q40, Q41, Q42, Q43, Q44, Q45]
 
+
 function mouseClick(){
 	var index = Math.floor((Math.random()*Addition3.length)+0);
 	document.getElementById('question').innerHTML =Addition3[index][0];
@@ -53,16 +54,20 @@ function mouseClick(){
 	document.getElementById('choice2').innerHTML=Addition3[index][2];
 	document.getElementById('choice3').innerHTML=Addition3[index][3];
 
-//console.log(document.getElementById('choice1').innerHTML);
-
+//console.log(document.getElementById('choice1')".innerHTML);
+	
 	if (document.getElementById('radio1').checked){
 		console.log("the first radio button is pressed");
 		console.log("we are printing out the correct answer: " + Addition3[index][4]);
 	if(document.getElementById('choice1').innerHTML==Addition3[index][4]){
+		document.getElementById('results').innerHTML = "Correct!!"
 		console.log("you chose the correct answer: ");
-		console.log("the correct answer is: " + document.getElementById('choice1').innerHTML);
+		//console.log("the correct answer is: " + document.getElementById('choice1').innerHTML);
     	
     	}
+    else if(document.getElementById('choice1').innerHTML != Addition3[index][4]){
+    	document.getElementById('results').innerHTML = "Incorrect";
+    }
 	
 }
 	if (document.getElementById('radio2').checked){
@@ -70,9 +75,12 @@ function mouseClick(){
 	console.log("we are printing out the correct answer: " + Addition3[index][4]);
 	if(document.getElementById('choice2').innerHTML==Addition3[index][4]){
 		console.log("you chose the correct answer: ");
-		console.log("the correct answer is: " + document.getElementById('choice2').innerHTML);
-		
+		//console.log("the correct answer is: " + document.getElementById('choice2').innerHTML);
+		document.getElementById('results').innerHTML ="You chose the correct answer!!"
 	}
+	else if(document.getElementById('choice2').innerHTML != Addition3[index][4]){
+    	document.getElementById('results').innerHTML = "Incorrect";
+    }
 	
 }
 	if (document.getElementById('radio3').checked){
@@ -81,15 +89,23 @@ function mouseClick(){
 	if(document.getElementById('choice3').innerHTML==Addition3[index][4]){
 		console.log("you chose the correct answer: ");
 		console.log("the correct answer is: " + document.getElementById('choice3').innerHTML);
-		
+		//document.write("You chose the correct answer!!");
 	}
-
+	else if(document.getElementById('choice3').innerHTML != Addition3[index][4]){
+    	document.getElementById('results').innerHTML = "Incorrect";
+    }
 }
+
 
 document.getElementById('btn').addEventListener('click', function() {
       ["radio1", "radio2", "radio3"].forEach(function(id) {
         document.getElementById(id).checked = false;
       });
       return false;
+
     })
+
+
+
+	
 }
