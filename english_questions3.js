@@ -1,4 +1,26 @@
 "Directions: Choose the term that is the synonym for the term given."
+<<<<<<< HEAD
+ Q1=["Confident",  "question", "deduction", "avoid", "assured", "assured"]
+ Q2=["Discount", "obstruct", "deduction", "examine", "damage", "deduction"]
+ Q3=["Emotion", "stubborn", "honorable", "passion", "aconclude", "honorable"]
+ Q4=["Infer", "envious", "deduce", "sundry", "deadly", "infer"]
+ Q5=["Joke", "ignore", "jest", "promise", "conduct", "jest"]
+ Q6=["Smile", "frown", "grin", "happy", "sad", "grin"]
+ Q7=["Wonderful", "amazing", "sunny", "smile", "warm", "amazing"]
+ Q8=["Rubbish", "spiders", "laundry", "trash", "rocks", "trash"]
+ Q9=["Jumped", "run", "hopped", "under", "bend", "hopped"]
+ Q10=["Hungry","empty", "stavred", "angry", "stavred"]
+ Q11=["Large", "kind", "great", "wonderful", "great"]
+ Q12=["Leader", "first", "speaker", "ruler", "ruler"]
+ Q13=["Order", "command", "test", "give", "command"]
+ Q14=["Normal", "small", "regular", "insane", "regular"]
+ Q15=["Prove", "trust", "know", "show", "show"]
+ Q16=["Rescue", "save", "swim", "murder", "save"]
+ Q17=["Tremble", "throw", "shake", "calm", "shake"]
+ Q18=["Secret", "find", "trith", "hidden", "hidden"]
+ Q19=["Strange", "odd", "sleepy", "wrong", "odd"]
+ Q20=["Forgive", "tell", "forget", "pardon", "pardon"]
+=======
  Q1=["confident",  "question", "deduction", "avoid", "assured",]
  Q2=["discount", "obstruct", "deduction", "examine", "damage"]
  Q3=["emotion", stubborn, honorable, passion, aconclude]
@@ -24,3 +46,4 @@
  Q23=[]
  Q24=[]
  Q25=[]
+>>>>>>> fac9fe84753ff8d02afbbf8f10fce2080d2efa45
