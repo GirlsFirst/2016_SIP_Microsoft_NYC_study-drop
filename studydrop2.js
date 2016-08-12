@@ -46,6 +46,7 @@ Q45=["What's 0+7?", "2", "7", "1", "7"]
 
 var Addition3 =[Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15, Q16, Q17, Q18, Q19, Q20, Q21, Q22, Q23, Q24, Q25, Q26, Q27, Q28, Q29, Q30, Q31, Q32, Q33, Q34, Q35, Q36, Q37, Q38, Q39, Q40, Q41, Q42, Q43, Q44, Q45]
 var index;
+var score = 0;
 
 function mouseClick(){
 	index = Math.floor((Math.random()*Addition3.length)+0);
@@ -62,6 +63,7 @@ function mouseClick(){
 	})
 
  	document.getElementById('results').innerHTML = "";
+
 }
 
 
@@ -81,11 +83,27 @@ function check(){
 		console.log(Addition3[index][4]);
 		console.log(userchoice);
 		document.getElementById('results').innerHTML = "Correct!"
+		score++;
+		document.getElementById('change').innerHTML = "Questions answered correctly: " + score;
+		console.log('score has been changed');
+
 	}
 	else if (userchoice != Addition3[index][4]) {
 		console.log(index);
 		console.log(Addition3[index][4]);
 		console.log(userchoice);
-	document.getElementById('results').innerHTML = "Incorrect"
+		document.getElementById('results').innerHTML = "Incorrect"
 	}
+
+	if (score == 10) {
+		modal = document.getElementById('myModal');
+		modal.style.display = "block";
+	}
+	window.onclick = function(event){
+		if (event.target == modal){
+			modal.style.display = "none";
+		}
+	}
+
 }
+

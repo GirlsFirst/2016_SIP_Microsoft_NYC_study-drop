@@ -6,6 +6,46 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="studydrop2.js"></script>
+  <style>
+  
+  #modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 90%;
+    height: 90%;
+    overflow: auto;
+  } 
+#modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    padding: 0;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+  
+ 
+ .close{
+  color: #aaa
+  font-size: 35px;
+  font-weight: bold;
+
+ }
+#modal-header {
+    padding: 2px 16px;
+    background-color: lightblue;
+}
+
+
+  </style>
 </head>
 
 <body>
@@ -14,18 +54,29 @@
    <p id="change">Questions answered correctly: 0 </p>
  </div>
  <br>
-  
+  <div id="myModal" class="modal">
+  <div id="modal-content">
+  <div id="modal-header">
+    <span class="close">X</span>
+    <h2>Congratulations!</h2>
+  </div>
+  <div class="modal-body">
+    <p>You've donated a cup of water to...</p>
+  </div>
+</div>
+</div>
+
   <div class="container">
-  <p id="question"> What's the answer to this question?</p>
+  <p id="question"> What's 5+4?</p>
   <form role="form">
     <div class="radio">
-      <label> <input class="buttons" type="radio" name="optradio" id="radio1"><p id="choice1"> Answer 1</p></label>
+      <label> <input class="buttons" type="radio" name="optradio" id="radio1"><p id="choice1"> 8</p></label>
     </div>
     <div class="radio" id="test">
-      <label> <input class="buttons" type="radio" name="optradio" id="radio2"><p id="choice2">Answer 2</p></label>
+      <label> <input class="buttons" type="radio" name="optradio" id="radio2"><p id="choice2">6</p></label>
     </div>
     <div class="radio">
-      <label><input class="buttons" type="radio" name="optradio" id="radio3"><p id="choice3"> Answer 3</p></label>
+      <label><input class="buttons" type="radio" name="optradio" id="radio3"><p id="choice3"> 9</p></label>
     </div>
 
     <button id="btn2" type="button" class="btn btn-primary btn-md" onclick="check()">  Check Answer</button>
