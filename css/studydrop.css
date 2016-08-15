@@ -7,10 +7,11 @@
     width: 90%;
     height: 90%;
     overflow: auto;
+    background-color: lightblue;
 } 
 #modal-content {
     position: relative;
-    background-color: white;
+    background-color: lightblue;
     margin: auto;
     padding: 0;
     width: 80%;
