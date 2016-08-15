@@ -1,0 +1,49 @@
+</!DOCTYPE html>
+<html>
+<head>
+  <title>Study Drop</title>
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="question_code.js"></script>
+  <link rel="stylesheet" type="text/css" href="studydrop.css">
+</head>
+
+<body onload="mouseClick()">
+
+ <div style="background-color:white;color:black;width: 250px;height:40px;padding-top:10px; padding-left:10px">
+   <p id="change">Questions answered correctly: 0 </p>
+ </div>
+ <br>
+  <div id="myModal" class="modal">
+  <div id="modal-content">
+  <div id="modal-header">
+    <h2>Congratulations!</h2>
+  </div>
+  <div class="modal-body">
+    <p>You've donated a cup of water to...</p>
+  </div>
+</div>
+</div>
+
+  <div class="container">
+  <p id="question"></p>
+  <form role="form">
+    <div class="radio">
+      <label> <input class="buttons" type="radio" name="optradio" id="radio1"><p id="choice1"></p></label>
+    </div>
+    <div class="radio" id="test">
+      <label> <input class="buttons" type="radio" name="optradio" id="radio2"><p id="choice2"></p></label>
+    </div>
+    <div class="radio">
+      <label><input class="buttons" type="radio" name="optradio" id="radio3"><p id="choice3"></p></label>
+    </div>
+
+    <button id="btn2" type="button" class="btn btn-primary btn-md" onclick="check()">  Check Answer</button>
+    <button id ="btn" type="button" class="btn btn-primary btn-md" onclick= "mouseClick()"> Next</button>
+ </form>
+
+<p id='results'></p>
+
+</body>
+</html>
