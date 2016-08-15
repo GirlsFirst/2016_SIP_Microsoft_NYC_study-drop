@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> button{background-color: lightpink
+}
+  
+</style>
+<link rel="stylesheet" type="text/css" href="index.css"  </head>
+
+
+
+<!--LINKS-->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<!--TAB TITLE-->
+<title>Study Drop</title>
+
+
+<!--LOGO-->
+<!-- <style>
+navbar_logo.png {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+</style> -->
+
+
+
+
+
+
+
+
+<!--LAYOUT-->
+
+
+
+
+<body>
+<style>
+body {
+    background-image: url("assets/background.jpg");
+}
+</style>
+
+
+
+
+
+<!--NAVIGATION BAR-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar4">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+      <a class="navbar-brand" href="#"><img style="  width: 100px;" src="assets/navbar_logo.png" alt="LOGO">
+      </a>
+      </div>
+      <div id="navbar4" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="subject_page.html">Subjects</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li><a href="contact_info.html">Contact</a></li>
+    </div>
+
+  </nav>
+
+
+
+
+
+
+<!--CAROUSEL-->
+<center>
+<p class="big">
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="assets/carousel1.jpg" alt="Chania" width="700" height="650">
+    </div>
+
+    <div class="item">
+      <img src="assets/carousel2.jpg" alt="Chania2" width="600" height="400">
+    </div>
+
+    <div class="item">
+      <img src="assets/carousel3.jpg" alt="Flower" width="700" height="710">
+    </div>
+
+  <!--CONTROLS-->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</p>
+</div>
+
+
+<hr noshade>
+</center>
+
+
+
+
+
+
+
+<!--SAMPLE QUESTION-->
+<center>
+<p class="big">
+<article>
+<div class="media">
+  <div class="media-body">
+  <img src="assets/about_index.png" alt="About" width="800" height="160">
+  </div>
+</div>
+</p>
+<p class="big">
+  <div class="media-body">
+  <img src="assets/subject_index.png" alt="Subjects" width="800" height="160">
+  </div>
+  <p class="big">
+</div>
+</p>
+</div>
+</article>
+</div>
+</p>
+
+<br>
+
+<button onclick="myFunction()">Fun Facts About H20</button>
+<div id="WaterFacts" X> 
+
+</div>
+<script >
+var factslist = ["Roughly 70 percent of an adults body is made up of water.", "At birth, water accounts for approximately 80 percent of an infant’s body weight", "A healthy person can drink about three gallons (48 cups) of water per day.", "Drinking too much water too quickly can lead to water intoxication. Water intoxication occurs when water dilutes the sodium level in the bloodstream and causes an imbalance of water in the brain.", "While the daily recommended amount of water is eight cups per day, not all of this water must be consumed in the liquid form. Nearly every food or drink item provides some water to the body.", "Soft drinks, coffee, and tea, while made up almost entirely of water, also contain caffeine. Caffeine can act as a mild diuretic, preventing water from traveling to necessary locations in the body", "Pure water (solely hydrogen and oxygen atoms) has a neutral pH of 7, which is neither acidic nor basic.", "Water dissolves more substances than any other liquid. Wherever it travels, water carries chemicals, minerals, and nutrients with it", "Much more fresh water is stored under the ground in aquifers than on the earth's surface", "The earth is a closed system, similar to a terrarium, meaning that it rarely loses or gains extra matter. The same water that existed on the earth millions of years ago is still present today.", "The average person in the United States uses anywhere from 80-100 gallons of water per day. Flushing the toilet actually takes up the largest amount of this water.", "Approximately 85 percent of U.S. residents receive their water from public water facilities. The remaining 15 percent supply their own water from private wells or other sources", "The weight a person loses directly after intense physical activity is weight from water, not fat", "Drinking adequate amounts of water can decrease the risk of certain types of cancers, including colon cancer, bladder cancer, and breast cancer.", "For a majority of sufferers, drinking water can significantly reduce joint and/or back pain.", "Water is the primary mode of transportation for all nutrients in the body and is essential for proper circulation. ", "Water helps to maintain healthy body weight by increasing metabolism and regulating appetite."  ]
+var count = 0;
+var index;
+function myFunction(){
+  index = Math.floor((Math.random()*factslist.length));
+var H20=document.getElementsByClassName('WaterFacts');
+  H20[count].innerHTML = factslist[index] ;
+  console.log(index);
+  console.log(factslist[index]);
+  count++;
+
+}
+
+</script>
+
+<div class="row">
+
+<div class="col-md-6 col-md-offset-3">
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts" ></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="Waterfacts"></h5>
+   <h5 class="Waterfacts"></h5>
+</div>
+
+</div>
+
+
+
+
+
+</hr no shade>
+</body>
+</html>
