@@ -91,6 +91,8 @@ function check(){
 		document.getElementById('change').innerHTML = "Questions answered correctly: " + score;
 		console.log('score has been changed');
 
+		// increase progress bar ? 
+
 	}
 	else if (userchoice != Addition3[index][4]) {
 		console.log(index);
