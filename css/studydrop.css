@@ -29,4 +29,20 @@
 
 body{
     background-color: lightblue;
+
+}
+#questioncontainer{
+       font-size: 4em;
+}
+
+.buttons{
+    width:1.2em;
+    height:1.2em;
+}
+
+.qtext{
+    padding-left:1em;
+}
+#change{
+    font-size: 3.5em;
 }

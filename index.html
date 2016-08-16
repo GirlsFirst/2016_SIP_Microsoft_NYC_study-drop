@@ -5,9 +5,9 @@
 
 
 <!--LINKS-->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
 <!--TAB TITLE-->
@@ -78,6 +78,7 @@ body {
 
 <!--CAROUSEL-->
 <center>
+<div class="container">
 <p class="big">
  <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -133,35 +134,70 @@ body {
 
 
 <!--SAMPLE QUESTION-->
-<center>
-<p class="big">
-<article>
-<div class="media">
-  <div class="media-body">
-  <img src="assets/about_index.png" alt="About" width="800" height="160">
+<div class="row">
+
+  <div class="col-md-6 col-md-offset-3">
+  <h1>About</h1>
+    <p><font size="5">Study Drop is a website created to aid developing countries in need of clean drinking water whilst motivating students to 
+    succeed in their studies. For every 10 questions answered correctly, students donate a cup of water to developing 
+    countries. Although this is a prototype, we hope to collaborate with water charities willing to help with this donation.</font></p>
+    <h2>Subject</h2>
+    <p><font size="5">Study Drop covers the basic principles of English and Math - more subjects will be included over time. 
+    Teachers are encouraged to have their classes complete the small quizzes on our website. The quizzes provided are meant 
+    for grades K-12, although at the moment they are provided only for grade three.</font></p>
+
   </div>
+</div> <!-- close row -->
+<br>
+
+<button id ="bea_button" onclick="myFunction()">Fun Facts About H20</button>
+<div id="WaterFacts" X> 
+
 </div>
-</p>
-<p class="big">
-  <div class="media-body">
-  <img src="assets/subject_index.png" alt="Subjects" width="800" height="160">
-  </div>
-  <p class="big">
+<script >
+var factslist = ["Roughly 70 percent of an adults body is made up of water.", "At birth, water accounts for approximately 80 percent of an infant’s body weight", "A healthy person can drink about three gallons (48 cups) of water per day.", "Drinking too much water too quickly can lead to water intoxication. Water intoxication occurs when water dilutes the sodium level in the bloodstream and causes an imbalance of water in the brain.", "While the daily recommended amount of water is eight cups per day, not all of this water must be consumed in the liquid form. Nearly every food or drink item provides some water to the body.", "Soft drinks, coffee, and tea, while made up almost entirely of water, also contain caffeine. Caffeine can act as a mild diuretic, preventing water from traveling to necessary locations in the body", "Pure water (solely hydrogen and oxygen atoms) has a neutral pH of 7, which is neither acidic nor basic.", "Water dissolves more substances than any other liquid. Wherever it travels, water carries chemicals, minerals, and nutrients with it", "Much more fresh water is stored under the ground in aquifers than on the earth's surface", "The earth is a closed system, similar to a terrarium, meaning that it rarely loses or gains extra matter. The same water that existed on the earth millions of years ago is still present today.", "The average person in the United States uses anywhere from 80-100 gallons of water per day. Flushing the toilet actually takes up the largest amount of this water.", "Approximately 85 percent of U.S. residents receive their water from public water facilities. The remaining 15 percent supply their own water from private wells or other sources", "The weight a person loses directly after intense physical activity is weight from water, not fat", "Drinking adequate amounts of water can decrease the risk of certain types of cancers, including colon cancer, bladder cancer, and breast cancer.", "For a majority of sufferers, drinking water can significantly reduce joint and/or back pain.", "Water is the primary mode of transportation for all nutrients in the body and is essential for proper circulation. ", "Water helps to maintain healthy body weight by increasing metabolism and regulating appetite."  ]
+var count = 0;
+var index;
+function myFunction(){
+  index = Math.floor((Math.random()*factslist.length));
+var H20=document.getElementsByClassName('WaterFacts');
+  H20[count].innerHTML = factslist[index] ;
+  console.log(index);
+  console.log(factslist[index]);
+  count++;
+
+}
+
+</script>
+
+<div class="row">
+
+<div class="col-md-6 col-md-offset-3">
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts" ></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="WaterFacts"></h5>
+   <h5 class="Waterfacts"></h5>
+   <h5 class="Waterfacts"></h5>
 </div>
-</p>
+
 </div>
-</article>
-</div>
-</p>
 
 
 
 
 
-
-
+</div> <!-- close container-->
 
 
 </hr no shade>
+</center>
 </body>
 </html>

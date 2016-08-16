@@ -1,6 +1,6 @@
 Q1=["What's the synonym for confident?", "deduction", "avoid", "assured", "assured"]
  Q2=["What's the synonym for discount?", "obstruct", "deduction", "damage", "deduction"]
- Q3=["What's the synonym emotion?", "stubborn", "honorable", "passion", "honorable"]
+ Q3=["What's the synonym emotion?", "stubborn", "honorable", "passion", "passion"]
  Q5=["What's the synonym for joke?", "ignore", "jest", "conduct", "jest"]
  Q6=["What's the synonym for smile?", "frown", "grin", "happy", "grin"]
  Q7=["What's the synoynm for wonderful?", "amazing", "smile", "warm", "amazing"]

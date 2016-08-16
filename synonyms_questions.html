@@ -5,7 +5,7 @@
    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="scripts/english_questions.js"></script>
+  <script src="scripts/synonyms_questions.js"></script>
   <link rel="stylesheet" type="text/css" href="css/studydrop.css">
 </head>
 
@@ -32,7 +32,11 @@
     </div>
   </nav>
 
- <div style="background-color:lightblue;color:black;width: 250px;height:40px;padding-top:10px; padding-left:10px">
+ <div class="container">
+ <div class="row">
+ <div class="questions">
+ <div class="col-md-12">
+ <div style="">
    <p id="change">Questions answered correctly: 0 </p>
  </div>
  <br>
@@ -48,23 +52,27 @@
 </div>
 
   <div class="container">
+  <div id="questioncontainer">
   <p id="question"></p>
-  <form role="form">
+  <form role="form" class="form-group">
     <div class="radio">
-      <label> <input class="buttons" type="radio" name="optradio" id="radio1"><p id="choice1"></p></label>
+      <label> <input class="buttons " type="radio" name="optradio" id="radio1"><p id="choice1" class="qtext"></p></label>
     </div>
     <div class="radio" id="test">
-      <label> <input class="buttons" type="radio" name="optradio" id="radio2"><p id="choice2"></p></label>
+      <label> <input class="buttons " type="radio" name="optradio" id="radio2"><p id="choice2" class="qtext"></p></label>
     </div>
     <div class="radio">
-      <label><input class="buttons" type="radio" name="optradio" id="radio3"><p id="choice3"></p></label>
+      <label><input class="buttons" type="radio" name="optradio" id="radio3"><p id="choice3" class="qtext"></p></label>
     </div>
 
-    <button id="btn2" type="button" class="btn btn-primary btn-md" onclick="check()">  Check Answer</button>
-    <button id ="btn" type="button" class="btn btn-primary btn-md" onclick= "mouseClick()"> Next</button>
+    <button id="btn2" type="button" class="btn btn-primary btn-lg" onclick="check()">  Check Answer</button>
+    <button id ="btn" type="button" class="btn btn-primary btn-lg" onclick= "mouseClick()"> Next</button>
  </form>
 
 <p id='results'></p>
+</div>
+</div>
+</div>
 
 </body>
 </html>
