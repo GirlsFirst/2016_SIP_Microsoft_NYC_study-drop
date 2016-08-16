@@ -22,10 +22,4 @@ right {
     float: right;
     margin: 0 0 10px 10px;
 }
-p{
-    border-radius: 5px;
-    border-width: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    margin-right: 150px
-}
+

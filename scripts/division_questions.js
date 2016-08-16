@@ -103,7 +103,6 @@ var Division =[Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9, Q10, Q11, Q12, Q13, Q14, Q15,
 var index;
 var score = 0;
 var times_shown = 0;
-var SUBMIT_URL = "https://script.google.com/macros/s/AKfycbyKs8-OvK6SYtx96bqPEbDV4RoKixAUvULPjDh6ooULe5gX-NEO/exec"
 
 
 function mouseClick(){
@@ -158,23 +157,6 @@ function check(){
 			var modal = document.getElementById('myModal');
 			modal.style.display = "block";
 			times_shown ++;	
-			var form = document.createElement("FORM");
-			form.id = "waterform"
-			var input = document.createElement("INPUT");
-			input.type = "text";
-			input.name = "waterdonated";
-			input.value = "Water donated!";
-			form.appendChild(input);
-		
-
-			var data = $(form).serialize();
-			
-
-			$.ajax({
-				url: SUBMIT_URL,
-				type: "POST",
-				data: data
-			});
 		}
 
 		
